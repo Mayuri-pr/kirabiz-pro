@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Outfit:wght@500&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* font-family: Helvetica Now Text; */
+/* font-family: "Outfit", sans-serif; */
+/* font-family: "Playfair Display", serif; */
+
+.navbar {
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  line-height: 26px;
+  text-transform: uppercase;
+  box-shadow: 0 8px 6px -6px gray;
+  --webkit-box-shadow: 0 8px 6px -6px gray;
+  border-bottom: solid gray !important;
+}
+
+.nav-link {
+  font-weight: 300 !important;
+}
+
+.active {
+  border-bottom: 2px solid black;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-family: "roboto", sans-serif;
+  letter-spacing: 3px;
+}
+
+.shadow a:hover {
+  color: #ffefba;
+}
+
+/* =================================
+======== page not found css ======= */
+.pnf {
+  display: flex;
+  min-height: 65vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pnf-title {
+  font-size: 100px;
+  font-weight: 700;
+}
+
+.pnf-heading {
+  font-weight: normal;
+}
+
+.pnf-btn {
+  color: black;
+  border: 1px solid black;
+  text-decoration: none;
+  padding: 10px;
+  margin-top: 10px;
+}
+.pnf-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+/* ========================================= */
+/* =========contact us ========= */
+
+.contactus {
+  margin: 0;
+  padding: 0;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ========================================= */
+/* =========About us ========= */
+
+.Aboutus {
+  margin: 0;
+  padding: 0;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* =========Products.js ========= */
+
+.product-link {
+  text-decoration: none !important;
+  color: black !important;
+}
+
+.card-img-top {
+  display: block;
+  width: 100%;
+  height: 18rem;
+  object-fit: cover;
+}
+.card-img-top1 {
+  display: block;
+  width: 58%;
+  height: 18rem;
+  object-fit: cover;
+}
+
+.content {
+  /* grid-column: 300px; */
+  grid-column: 2 / -1;
+  transform: translate(120px, 50%);
+}
+.container {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center items vertically */
+}
+
+.image {
+  flex-direction: column;
+  grid-column: 1;
+  grid-row: 1;
+  left: 11px;
+  max-width: 27%; /* Set maximum width for the image */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.text h1 {
+  margin-left: 20px;
+  margin-top: -14%;
+}
+/* .payment{
+  align-items: center;
+  width: 75%;
+  float: left;
+  padding: 15px;
+  border: 1px solid red;
+}
+ */
+
+.card-img-top1 {
+  text-align: center;
+  margin-left: 48px;
+  display: block;
+  width: 58%;
+  height: 15rem;
+  object-fit: cover;
+  border-radius: 83px;
+}
+
+.row.mb-2 {
+  margin-bottom: 2.5rem !important;
+}
+
+/* checkout form  */
+
+
+.row1 {
+  display: -ms-flexbox;
+  /* IE10 */
+  display: flex ;
+  -ms-flex-wrap: wrap;
+  /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%;
+  /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%;
+  /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%;
+  /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container2 {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn1 {
+  background: linear-gradient(to left, #99ccff 0%, #003399 100%);
+  color: black;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.btn1:hover {
+  background: linear-gradient(to left, #003399 0%, #99ccff 100%);
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+   color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row1 {
+      flex-direction: column-reverse;
+  }
+
+  .col-25 {
+      margin-bottom: 20px;
+  }
+}
+.para-about{
+   font-family: "Outfit", sans-serif; 
+  font-size: 22px;
+}
+.para1-about{
+  font-family: Helvetica Now Text;
+  font-size: 16px;
+  font-style: italic;
+}
